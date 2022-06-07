@@ -3,7 +3,7 @@
  * Vancouver Public Library, Digital Services, Digital Experience team
  * Adapting Maxim Surguy's Triangle Pattern Generator https://codepen.io/msurguy/pen/wvGgzN for use as a header decoration for infoaction.ca
  * Inspired by inria.fr, which at time of this writing did similar, leveraging Surguy's work for their site
- * We don't require and interactive, graphic exporting tool, so we'll remove
+ * We don't require an interactive, graphic exporting tool, so we'll remove
  * - GUI library and callback
  * - Exporter and callbacks
  * - Polyfills such as Mousetrap, PrefixFree, and StyleFix
@@ -1011,9 +1011,9 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   // Mesh Properties
   //------------------------------
   var MESH = {
-    width: 1.2,
-    height: 1.2,
-    slices: 250,
+    width: 1,
+    height: 1,
+    slices: 75,
     ambient: '#555555',
     diffuse: '#FFFFFF'
   };
@@ -1026,8 +1026,8 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
     xPos : 0,
     yPos : 200,
     zOffset: 100,
-    ambient: '#880066',
-    diffuse: '#FF8800',
+    ambient: '#227f7f',
+    diffuse: '#5fa4a4',
     pickedup :true,
     proxy : false,
     currIndex : 0
