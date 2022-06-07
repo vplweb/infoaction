@@ -1005,7 +1005,11 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   return this;
 };
 
-(function(){
+//--------------------------------
+// SET THE PROPERTIES OF THE MESH HERE
+//--------------------------------
+
+ (function(){
 
   //------------------------------
   // Mesh Properties
@@ -1036,9 +1040,9 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   //------------------------------
   // Render Properties
   //------------------------------
-  var WEBGL = 'webgl';
+  // var WEBGL = 'webgl';
   var CANVAS = 'canvas';
-  var SVG = 'svg';
+  // var SVG = 'svg';
   var RENDER = {
     renderer: CANVAS
   };
@@ -1050,8 +1054,8 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   var container = document.getElementById('container');
   var output = document.getElementById('output');
   var renderer, scene, mesh, geometry, material;
-  var webglRenderer, canvasRenderer, svgRenderer;
-  var gui;
+  // var webglRenderer, canvasRenderer, svgRenderer;
+  // var gui;
 
   //------------------------------
   // Methods
@@ -1078,15 +1082,15 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
       output.removeChild(renderer.element);
     }
     switch(index) {
-      case WEBGL:
-        renderer = webglRenderer;
-        break;
+      // case WEBGL:
+      //   renderer = webglRenderer;
+      //   break;
       case CANVAS:
         renderer = canvasRenderer;
         break;
-      case SVG:
-        renderer = svgRenderer;
-        break;
+      // case SVG:
+      //   renderer = svgRenderer;
+      //   break;
     }
     renderer.setSize(container.offsetWidth, container.offsetHeight);
     output.appendChild(renderer.element);
