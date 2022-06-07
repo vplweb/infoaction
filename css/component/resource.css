@@ -1,0 +1,30 @@
+.resource-type-node {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
+
+.resource-type-node__image img {
+  width: 100%;
+  height: auto;
+}
+
+.resource-type-node__related-service h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.resource-type-node__related-service div a span {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: var(--infoaction--pale-green);
+  color: var(--infoaction--green);
+  font-size: 0.8em;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.resource-type-node__related-service div a span:hover {
+  background-color: var(--infoaction--light-green);
+}

@@ -1,0 +1,116 @@
+    {#
+    /**
+     * @file
+     * Default theme implementation to display a single page.
+     *
+     * The doctype, html, head and body tags are not in this template. Instead they
+     * can be found in the html.html.twig template in this directory.
+     *
+     * Available variables:
+     *
+     * General utility variables:
+     * - base_path: The base URL path of the Drupal installation. Will usually be
+     *   "/" unless you have installed Drupal in a sub-directory.
+     * - is_front: A flag indicating if the current page is the front page.
+     * - logged_in: A flag indicating if the user is registered and signed in.
+     * - is_admin: A flag indicating if the user has permission to access
+     *   administration pages.
+     *
+     * Site identity:
+     * - front_page: The URL of the front page. Use this instead of base_path when
+     *   linking to the front page. This includes the language domain or prefix.
+     *
+     * Page content (in order of occurrence in the default page.html.twig):
+     * - messages: Status and error messages. Should be displayed prominently.
+     * - node: Fully loaded node, if there is an automatically-loaded node
+     *   associated with the page and the node ID is the second argument in the
+     *   page's path (e.g. node/12345 and node/12345/revisions, but not
+     *   comment/reply/12345).
+     *
+     * Regions:
+     * - page.header__region_1
+     * - page.header__region_2
+     * - page.header__region_4
+     * - page.header__region_5
+     * - page.main__aside_a
+     * - page.main__aside_b
+     * - page.content
+     * - page.footer__region_1
+     * - page.footer__region_2
+     * - page.footer__region_3
+     *
+     * @see template_preprocess_page()
+     * @see html.html.twig
+     *
+     * @ingroup themeable
+     */
+    #}
+      <header>
+        <div class="header__region-1">{{ page.header__region_1 }}</div>
+        <div class="header__region-2">
+          <a class="logo-home" href="https://ntimmy.vpl.ca">
+            <img class="logo-normal" alt="VPL Logo" src="{{ base_path ~ directory }}/images/infoaction-logo.svg"/>
+          </a>
+        </div>
+        {# <div class="page.header--output">{{ page.header }}</div> #}
+        {# The Aria role of next element should come with that element's HTML (role="menubar") #}
+        <div class="header__region-3">
+          {{ page.header__region_3 }}
+        </div>
+        <div class="header__region-4">
+          {{ page.header__region_4 }}
+        </div>
+      </header>
+      <!-- <main> element is unique to the page; it's structural and doesn't require and ID or class; it's semantic with an implicit role of "main"; and cannot take an ARIA role (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main) -->
+      <main id="main-content">
+        {% if page.main__aside_a %}
+          <aside class="main__aside-a">
+            {{ page.main__aside_a }}
+          </aside>
+        {% endif %}
+        {% if page.main__aside_b %}
+          <aside class="main__aside-b">
+            {{ page.main__aside_b }}
+          </aside>
+        {% endif %}
+          {#
+            Drupal sucks. So because Drupal absolutely must have someplace to write {{ page.content }}, and will write to that no matter what we do we have to output it
+            This means that we get weird out comes like Page Title blocks (yes that's actually a Drupal block), output to page.conetnt even if we don't declare it as a region
+            This means thast if {{ page.content }} is placed ahead of {{ page.main__region-1 }} and the page title block was placed in main__region-1, you get content before title
+            The only way to handle this is to 'convert' main__region-1 into content and allow admins to assign things into the section
+            This does not conform to Drupal's beloved and blind embrace of SMACSS
+            This doesn't help us think about the parts of the page
+            This makes handling CSS and HTML more difficult
+            This is a Bad Idea™
+            I am going to leave the original class on the div and ADD the .content class
+            I hope this helps us and doesn't confuse us
+            JON WHIPPLE
+          #}
+          <div class="main__content main__region-1">
+            {{ page.content }}
+          </div>
+          </div>
+      </main>
+      <footer>
+        {% if page.footer__region_1 %}
+          <div class="footer__region-1">
+            <div class="footer__region-1--content">
+              {{ page.footer__region_1 }}
+            </div>
+          </div>
+        {% endif %}
+        <div class="footer__region-2">
+          <div class="footer__region-2--content">
+          {{ page.footer__region_2 }}
+          </div>
+        </div>
+        <div class="footer__region-3">
+          <div class="footer__region-3--content">
+          <ul>
+          <li>&copy; {{ 'now' | date('Y') }}</li>
+          <li><a href="https://www.vpl.ca">Vancouver Public Library</a></li>
+          <li>All rights reserved</li>
+          </ul>
+          </div>
+        </div>
+      </footer>

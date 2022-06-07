@@ -1,0 +1,117 @@
+#block-views-block-services-and-fees-block-1 h2 {
+  padding-bottom: 1em;
+}
+
+.services-and-fees div[class*="js-view-dom"],
+#block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2em;
+  perspective: 1000px;
+}
+
+#block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
+  margin: 1em 0 2em;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  perspective: 1000px;
+}
+
+@media screen and (min-width: 64em) {
+  .services-and-fees div[class*="js-view-dom"],
+  #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    perspective: 1000px;
+  }
+  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    perspective: 1000px;
+  }
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.card .card__front {
+  height: 11em;
+  width: auto;
+  background-color: var(--infoaction--green);
+	backface-visibility: hidden;
+	transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+  padding: 2em;
+}
+
+.card .card__front h3 {
+  margin-top: -2em;
+  color: white;
+  text-align: center;
+}
+
+.card .card__front img {
+  margin-top: -1em;
+  width: 100%;
+  height: auto;
+}
+.card .card__front:hover {
+  cursor: pointer;
+}
+
+.card .card__back {
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 11em;
+  width: auto;
+  padding: 2em;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  transition-timing-function: ease-in-out;
+  transform: rotateY(180deg);
+  background: var(--infoaction--pale-green); 
+}
+
+.card .card__back:hover {
+  cursor: pointer;
+}
+
+.card.flipped .card__front {
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .card__back {
+  transform: rotateY(0deg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 1;
+}

@@ -1,0 +1,75 @@
+a {
+  color: var(--infoaction--green);
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+
+/* Header - Request a Quote */
+.request-a-quote {
+  display: inline-block;
+  background-color: var(--infoaction--dark-green);
+  padding: 0.5em;
+}
+
+.request-a-quote:hover {
+  background-color: var(--very-dark-grey);
+}
+
+/* Button Links */
+input[type="submit"],
+button,
+.button-link a {
+  padding: 0.5em 2em;
+  background-color: var(--infoaction--green);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.button-link a:hover {
+  background-color: var(--infoaction--dark-green);
+  cursor: pointer;
+}
+
+.button-link a {
+  text-decoration: none;
+}
+
+/* Social Media */
+.social-media {
+  display: flex;
+}
+
+.twitter,
+.linkedin {
+  display: block;
+  color: transparent;
+  font-size: 0 !important;
+  width: 36px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border: 5px solid white;
+}
+
+.twitter {
+  background-image: url("/sites/ntimmy/themes/infoaction/images/logo-twitter-round.svg");
+}
+
+.linkedin {
+  background-image: url("/sites/ntimmy/themes/infoaction/images/logo-linkedin-round.svg");
+}
+
+.footer__region-2--content .twitter,
+.footer__region-2--content .linkedin {
+  border-color: transparent;
+}

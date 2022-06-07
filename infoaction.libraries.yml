@@ -1,0 +1,65 @@
+# Welcome to YAML. Indentation counts but line spaces don't. Comments are preceded by a '# ' and are not parsed
+# The next line names this section of our libraries. It is called by our infoaction.info.yml file. We can have as many sections as we want. To use them, we need to call each by name.
+global-everything:
+  # Uncomment next line to force Drupal to put our library files in the header of our pages
+  # header: true
+  # The next line defines the version of this library. Right now we are using VERSION. Don't know what this means, but it works
+  version: VERSION
+  # The next line declares we will be using some CSS that we bring to the table
+  css:
+    # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'base'
+    base:
+      # Get the always latest version of normalize.css via CDN per readme.md at https://github.com/necolas/normalize.css
+      'https://cdn.jsdelivr.net/npm/normalize.css': {external: true}
+      css/base/base.css: {}
+      css/base/custom-properties.css: {}
+      css/base/fonts.css: {}
+      css/base/links.css: {}
+      css/base/typography.css: {}
+      css/base/webforms.css: {}
+    # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'layout'
+    layout:
+      css/layout/layout--1024.css: {}
+    # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'compent', which is the Drupal term for SMACSS's "module"
+    component:
+      css/component/about.css: {}
+      css/component/client-feedback-form.css: {}
+      css/component/contact-form.css: {}
+      css/component/detailed-quote-form.css: {}
+      css/component/estimated-fees-form.css: {}
+      css/component/home.css: {}
+      css/component/quicktabs.css: {}
+      css/component/related-resources.css: {}
+      css/component/request-a-quote-form.css: {}
+      css/component/resource.css: {}
+      css/component/services.css: {}
+      css/component/services-flip-cards.css: {}
+      css/component/services-table.css: {}
+      css/component/slider.css: {}
+      css/component/testimonials.css: {}
+    # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'theme'
+    theme:
+      # The next line declares the CSS files we are going to us
+      css/theme/footer.css: {}
+      css/theme/header.css: {}
+      
+# This section is for the Monster Test page-specific JavaScript files.
+monster-cards:
+  # The next line declares the JavaScript file we are going to use. 
+    js:
+      js/monster-cards.js: {}
+# This section is for the Services and Fees page-specific JavaScript files.
+services-cards:
+  # The next line declares the JavaScript file we are going to use. 
+    js:
+      js/services-cards.js: {}
+# This section is for the Calculator page-specific JavaScript files.
+calculator:
+  # The next line declares the JavaScript file we are going to use. 
+    js:
+      js/calculator.js: {}
+# This section is for the Testimonial Slider page-specific JavaScript files.
+slider:
+  # The next line declares the JavaScript file we are going to use. 
+    js:
+      js/slider.js: {}

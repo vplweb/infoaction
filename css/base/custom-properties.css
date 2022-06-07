@@ -1,0 +1,29 @@
+:root {
+  /* Grey Series */
+    /* Use CSS color keywords for black (which wasn't black anyway) and white, no need to have custom properties so why bother repeating it? */
+    /* Change names to be phrases we actually use and can reason with */
+    /* BLACK: Use color keyword "black" */
+    --very-dark-grey: rgb(34,34,34);
+    --dark-grey: rgb(68,68,68);
+    --grey: rgb(102,102,102);
+    --light-grey: rgb(204,204,204);
+    --very-light-grey: rgb(238,238,238);
+    --pale-grey: rgb(248,248,248);
+    /* WHITE: Use color keyword "white" */
+
+
+  /* InfoAction Colours */
+   --infoaction--green: rgb(0,112,112);
+   --infoaction--pale-green: rgb(237, 248, 248);
+   --infoaction--light-green: rgb(211, 232, 232);
+   --infoaction--dark-green: rgb(9, 58, 58);
+
+  /* Typography sizes */
+  --h1: 2.5em;
+  --h2: 1.5em;
+  --h3: 1.2em;
+  --h4: 0.9em;
+  --p: rem;
+  --small: 0.75em;
+ 
+}

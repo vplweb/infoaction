@@ -1,0 +1,27 @@
+.webform-submission-request-a-quote-form #edit-details label,
+.form-item-online-platform-zoom-microsoft-teams-etc- label {
+  display: block;
+  margin: 0.5em 0 0.25em;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .webform-submission-request-a-quote-form .webform-section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2em;
+  }
+  
+  .webform-submission-request-a-quote-form:nth-child(odd) {
+    grid-column: 1/2;
+  }
+  
+  .webform-submission-request-a-quote-form:nth-child(even) {
+    grid-column: 2/3;
+  }
+  
+  .webform-submission-request-a-quote-form  .js-form-type-textarea {
+    grid-column: 1/3;
+  }
+  
+}

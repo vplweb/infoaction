@@ -1,0 +1,35 @@
+.footer__region-2--content h2 {
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.footer__region-2--content p {
+  font-size: 0.9em;
+  color: white;
+}
+
+.footer__region-2--content a {
+  color: white;
+  border-bottom-color: white;
+}
+
+.footer__region-2--content img {
+  width: 60%;
+}
+
+.footer__region-3--content ul {
+  list-style: none;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  color: var(--infoaction--light-green);
+}
+
+.footer__region-3--content li {
+  padding: 0 1em;
+  color: var(--infoaction--light-green);
+}
+
+.footer__region-3--content a {
+  color: var(--infoaction--light-green);
+}

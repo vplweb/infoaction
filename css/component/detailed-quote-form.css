@@ -1,0 +1,30 @@
+#block-howcanwehelpyouwebformblock section {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#block-howcanwehelpyouwebformblock h2 {
+  margin-bottom: 2em;
+}
+
+.webform-submission-request-a-detailed-quote-add-form .form-item {
+  margin-bottom: 0.5em;
+}
+
+.webform-submission-request-a-detailed-quote-add-form label {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 64em) {
+  .webform-submission-request-a-detailed-quote-add-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2em;
+  }
+  
+  .webform-submission-request-a-detailed-quote-add-form .form-actions {
+    grid-column: 2/3;
+    text-align: right;
+  }
+}
+

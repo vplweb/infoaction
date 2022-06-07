@@ -1,0 +1,7 @@
+.webform-submission-client-feedback-form tbody tr:nth-of-type(odd) {
+  background-color: var(--infoaction--light-green);
+}
+
+.webform-submission-client-feedback-form td {
+  border: none;
+}

@@ -1,0 +1,52 @@
+.page-node-type-service .field__label {
+  margin-bottom: 0.25em;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.page-node-type-service .field__item {
+  margin: 0 0 1em 0;
+}
+
+.page-node-type-service #block-infoaction-content > article {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2em;
+}
+
+.service-node {
+  grid-column: 1/8;
+}
+
+.service-aside {
+  grid-column: 8/11;
+}
+
+.service-aside__webform h2 {
+  margin-bottom: 0.5em;
+}
+
+.service-aside__webform form {
+  padding: 2em;
+  background-color: var(--infoaction--pale-green);
+}
+
+.service-aside__webform label[for*="edit-total"] {
+  display: inline-block;
+  margin: 0.25em 0;
+  font-weight: 700;
+}
+
+.service-aside__webform .js-form-item-quick-fee-estimate {
+  margin: 0.5em 0;
+}
+
+.service-aside__webform details {
+  font-size: 0.9em;
+}
+
+.service-aside__webform .form-actions {
+  margin-top: 1em;
+}

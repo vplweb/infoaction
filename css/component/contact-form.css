@@ -1,0 +1,28 @@
+#block-contactusform {
+  padding: 2em;
+  background-color: var(--infoaction--pale-green);
+}
+
+#block-contactusform form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#block-contactusform .form-item {
+  padding: 0.5em 0;
+}
+
+#block-contactusform label {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+#block-contactusform input[type="text"],
+#block-contactusform input[type="email"],
+#block-contactusform textarea {
+  border: 1px solid var(--light-grey);
+}
+

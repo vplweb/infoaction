@@ -1,0 +1,28 @@
+# Welcome to YAML. Indentation counts but line spaces don't. Comments are preceded by a '# ' and are not parsed
+# The theme name as it will be displayed in Admin UI. REQUIRED
+name: infoaction
+# textual description of the theme that will be displayed in Admin UI. Optional
+description: Drupal Theme for InfoAction
+# The kind of thing this is module or theme (which is a special kind of module) REQUIRED(?)
+type: theme
+# This next field MUST exist, but a base theme IS NOT REQUIRED. Specify a theme to base your them on by using its name. Use 'false' if you are not basing your work on another theme. REQUIRED
+base theme: false
+# The next line specifies the minimum or particular Drupal version that the theme requires. REQUIRED 
+core_version_requirement: ^9
+# The next line declares that we'll be using additional resources in our theme such as CSS or JS
+libraries:
+  # The following line tells Drupal where to find the references to these resources. Syntax matters here (indent and use a hyphen then a space and single quotes). This is a path 'x2' refers to our theme directory and 'global-everything refers to the section name defined inside the '*.libraries.yml' file in the root of othe theme directory. Using this method you can make lists of libraries in the *libraries.yml file but only call for the ones you want to use from here.
+  - 'infoaction/global-everything'
+# Next line declares a 'region' section. If none are defined here, Drupal will automatically assign a default set of regions because the system can't function without them. Region defined as 'content: Whatever Name You Want' MUST exist as part of your custom list. Left-hand key is used by the machine: no space, no caps; right-hand Value is for humans like you and me, space OK but ensure consistency by wrsapping in single quotes (its seems there is no considtency to the single quote stuff. Testing and reference to the Bartik theme reveals that regions are still labelled correctly and function correctly in the system.)
+regions:
+    # Region names cannot have hyphens; probably something to do with PHP?
+    header__region_1: 'Header Region 1 (Alerts)'
+    header__region_2: 'Header Region 2 (Logo)'
+    header__region_3: 'Header Region 3 (Main Menu)'
+    header__region_4: 'Header Region 4 (Hero)'
+    main__aside_a: 'Main Aside A'
+    main__aside_b: 'Main Aside B'
+    content: 'Content'
+    footer__region_1: 'Footer Region 1'
+    footer__region_2: 'Footer Region 2'
+    footer__region_3: 'Footer Region 3'

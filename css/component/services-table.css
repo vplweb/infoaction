@@ -1,0 +1,21 @@
+table {
+  margin-top: 2em;
+  border-spacing: 0px;
+}
+
+th {
+  text-align: left;
+}
+
+thead th {
+  border-bottom: 4px solid var(--very-dark-grey);
+}
+td {
+  padding: 0.5em 0.5em 0.5em 0;
+  border-bottom: 1px solid var(--very-dark-grey);
+}
+
+.views-field-nothing {
+  padding-right: 0;
+  min-width: 10em;
+}

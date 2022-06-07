@@ -1,0 +1,61 @@
+section {
+  margin-bottom: 1em;
+  padding: 2em;
+  background-color: var(--infoaction--pale-green);
+}
+
+section h2,
+section h3 {
+  margin-bottom: 1em;
+}
+
+[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  width: 98.5%;
+  padding: 0.25em;
+  border: none;
+  border: 1px solid var(--light-grey);
+}
+
+input[type="number"] {
+  padding: 0.25em;
+  border: none;
+  border: 1px solid var(--light-grey);
+}
+
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="number"]:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--infoaction--dark-green);
+}
+
+label {
+  margin-bottom: 0.25em;
+}
+
+input + label {
+  display: inline-block;
+}
+
+label + input {
+  display: block;
+}
+
+.description {
+  font-size: 0.8em;
+  margin: 0.25em 0 1em;
+  font-style: italic;
+}
+
+.js-form-type-webform-likert > label:first-of-type,
+.fieldset-legend {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
