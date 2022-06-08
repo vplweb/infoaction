@@ -44,10 +44,10 @@ global-everything:
       css/theme/header.css: {}
 
 # This section is for Triangle Pattern Light Effects
-triangle-light-effect:      
+# triangle-light-effect:      
     # The next line declares the JavaScript file we are going to use. 
-    js:
-      js/triangle-light-effect.js: {}
+    # js:
+      # js/triangle-light-effect.js: {}
 # This section is for the Monster Test page-specific JavaScript files.
 monster-cards:
   # The next line declares the JavaScript file we are going to use. 
