@@ -51,7 +51,6 @@ triangle-light-effect:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/drupalSettings
 # This section is for the Monster Test page-specific JavaScript files.
 monster-cards:
   # The next line declares the JavaScript file we are going to use. 

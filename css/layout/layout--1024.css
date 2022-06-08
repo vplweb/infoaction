@@ -18,6 +18,11 @@
     display: grid;
   }
 
+  .infoaction-lightshow {
+    grid-column: 1 / 13;
+    grid-row: 1 / 4;
+  }
+
   .header__region-1 {
     grid-column: 1/13;
     grid-row: 1/2;
