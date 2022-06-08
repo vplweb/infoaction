@@ -18,7 +18,7 @@
     display: grid;
   }
 
-  .infoaction-lightshow {
+  #output {
     grid-column: 1 / 13;
     grid-row: 1 / 4;
   }
