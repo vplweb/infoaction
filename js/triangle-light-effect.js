@@ -66,7 +66,6 @@ SOFTWARE.
 
 **/
 
-jQuery( document ).ready(function() {
 var Delaunay;
 
 (function() {
@@ -1195,4 +1194,4 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   initialise();
 
 })();
-});
+
