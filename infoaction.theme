@@ -32,7 +32,7 @@ function infoaction_preprocess_html(&$vars) {
 
 function infoaction_page_attachments_alter(&$page){
   $path = $current_path = \Drupal::service('path.current')->getPath();
-  if($path == '/node/31' ) {
+  if($path == '/' ) {
     $page['#attached']['library'][] = 'infoaction/triangle-light-effect';
   }
   else($path == '/node/5') {
