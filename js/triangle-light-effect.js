@@ -66,7 +66,7 @@ SOFTWARE.
 
 **/
 
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 var Delaunay;
 
 (function() {
