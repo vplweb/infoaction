@@ -8,6 +8,36 @@
  * - Exporter and callbacks
  * - Polyfills such as Mousetrap, PrefixFree, and StyleFix
  * - others if we can
+ * Setting properties
+ * Mesh Properties section line 1008
+ * - width – number that sets the width of the mesh in relation to its container; 1 = 100%; default: 1.5
+ * - height – number that sets the height of the mesh in relation to its container; 1 = 100%; default: 1.5
+ * - slices – number of triangles in the mesh; integer; should be greater than 1; more slices means smaller triangles; default: 75
+ * - ambient – single quoted hex colour value; the general perceived background colour of the mesh; used if there are no values for Light Properties' ambient property; default: #555555
+ * - diffuse – single quoted hex colour value; the general perceived lighted colour of the mesh; used if there are no values for Light Properties' diffuse property; default: #ffffff
+ * Light Properties section line 1026
+ * - count - the number of lights illuminating the mesh; hold-over from when this was a generator tool; leave set to 1; default: 1
+ * - xPos - the initial position of the light on the x-axis (left–right) of the canvas; 0 = centre; default: 0
+ * - yPos - the initial position of the light on the y-axis (top–bottom) of the canvas; 0= centre; default: 200
+ * - zOffset - the inital offset of the light on the z-axis of the canvas (closer to the surface or further way); smaller numbers are closer to the surface making the light more concentrated, larger numbers further away making the light cover more surface; default: 100
+ * - ambient - single quoted hex value; initial general colour of the light; default: #227f7f
+ * - diffuse: - single quoted hex value; initial specific highlighting colour of the light; default: #5fa4a4
+ * - pickedup - from when this was a tool that generated triangle mesh graphics with multiple lights; leave set to true; default: true; maybe this matches the light to the mouse position?
+ * - proxy - from when this was a tool that generated triangle mesh graphics with multiple lights; leave set to false; default: false; no idea what this was/is for
+ * - currIndex - from when this was a tool that generated triangle mesh graphics with multiple lights; leave set to 0; default: 0; maybe the 0 indexed counter of lights placed on the canvas?
+ * Render Properties
+ * Leave these settings alone
+ * var CANVAS = 'canvas' - set the kind of rendering; originally the tool could work in canvas, WebGL, and SVG contexts; these are removed or disabled because we need only canvas for our purpose
+ * var RENDER = {
+ *   renderer: CANVAS
+ * };
+ * This supplies the canvas choice to the renderer (canvas only in our version)
+ * Global Properties section line 1049
+ * var center = FSS.Vector3.create(); LEAVE THIS
+ * var container = document.getElementById('container'); ASSIGNS the element for the generator to find in the DOM and is initial context
+ * var output = document.getElementById('output'); ASSIGNS the element for the generator to draw into and is the actual drawing context; should be an empty block level element in the DOM
+ * var renderer, scene, mesh, geometry, material; Creates some variables that the generator uses; any ideas?
+ * var canvasRenderer; creates another variable and it's absence doesn't seem to break things but I don't know what this does
 **/
 
 /**
@@ -1015,9 +1045,9 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   // Mesh Properties
   //------------------------------
   var MESH = {
-    width: 1,
-    height: 1,
-    slices: 75,
+    width: 1.5,
+    height: 1.5,
+    slices: 300,
     ambient: '#555555',
     diffuse: '#FFFFFF'
   };
