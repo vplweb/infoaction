@@ -35,7 +35,7 @@ function infoaction_page_attachments_alter(&$page){
   if($path == '/' ) {
     $page['#attached']['library'][] = 'infoaction/triangle-light-effect';
   }
-  else($path == '/node/5') {
+  else if($path == '/node/5') {
     $page['#attached']['library'][] = 'infoaction/monster-cards';
   }
   else if($path == '/node/7') {
