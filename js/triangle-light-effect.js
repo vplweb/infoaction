@@ -71,6 +71,9 @@ var Delaunay;
 (function() {
   "use strict";
 
+  $(document).ready(function() {
+
+
   var EPSILON = 1.0 / 1048576.0;
 
   function supertriangle(vertices) {
@@ -1194,4 +1197,4 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   initialise();
 
 })();
-
+});
