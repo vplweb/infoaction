@@ -33,11 +33,11 @@
  * };
  * This supplies the canvas choice to the renderer (canvas only in our version)
  * Global Properties section line 1049
- * var center = FSS.Vector3.create(); LEAVE THIS
- * var container = document.getElementById('container'); ASSIGNS the element for the generator to find in the DOM and is initial context
- * var output = document.getElementById('output'); ASSIGNS the element for the generator to draw into and is the actual drawing context; should be an empty block level element in the DOM
- * var renderer, scene, mesh, geometry, material; Creates some variables that the generator uses; any ideas?
- * var canvasRenderer; creates another variable and it's absence doesn't seem to break things but I don't know what this does
+ * - var center = FSS.Vector3.create(); LEAVE THIS
+ * - var container = document.getElementById('container'); ASSIGNS the element for the generator to find in the DOM and is initial context
+ * - var output = document.getElementById('output'); ASSIGNS the element for the generator to draw into and is the actual drawing context; should be an empty block level element in the DOM
+ * - var renderer, scene, mesh, geometry, material; Creates some variables that the generator uses; any ideas?
+ * - var canvasRenderer; creates another variable and it's absence doesn't seem to break things but I don't know what this does
 **/
 
 /**
