@@ -83,13 +83,20 @@
   left: 0;
   width: 100%;
   height: auto;
-  padding: 2em;
   backface-visibility: hidden;
   transition: transform 0.5s;
   transition-timing-function: ease-in-out;
   transform: rotateY(180deg);
   background: var(--infoaction--pale-green);
   aspect-ratio: 4 / 3;
+}
+
+.card .card__back h2 {
+  padding: 2em 2em 0 2em;
+}
+
+.card .card__back p {
+  padding: 0 2em 2em 2em;
 }
 
 .card .card__back:hover {
