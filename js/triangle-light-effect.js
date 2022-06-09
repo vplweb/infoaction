@@ -1049,7 +1049,7 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
     width: 1.5,
     height: 1.5,
     slices: 300,
-    ambient: '#999999',
+    ambient: '#777777',
     diffuse: '#FFFFFF'
   };
 
@@ -1061,7 +1061,7 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
     xPos : 0,
     yPos : 200,
     zOffset: 100,
-    ambient: '#2b8483',
+    ambient: '#1c7c7c',
     diffuse: '#227f7f',
     pickedup :true,
     proxy : false,
