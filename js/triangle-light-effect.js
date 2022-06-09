@@ -71,7 +71,7 @@ var Delaunay;
 (function() {
   "use strict";
 
-  $(document).ready(function() {
+
 
     function myFunction1() {
       document.getElementById("output").innerHTML = "Hello RaghuRamKondeti, This is Pavan Kumar Sake";
@@ -1200,4 +1200,3 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   initialise();
 
 })();
-});
