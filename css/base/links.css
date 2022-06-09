@@ -11,17 +11,6 @@ h6 a {
   text-decoration: none;
 }
 
-/* Header - Request a Quote */
-.request-a-quote {
-  display: inline-block;
-  background-color: var(--infoaction--dark-green);
-  padding: 0.5em;
-}
-
-.request-a-quote:hover {
-  background-color: var(--very-dark-grey);
-}
-
 /* Button Links */
 input[type="submit"],
 button,

@@ -1,5 +1,5 @@
 #block-views-block-services-and-fees-block-1 h2 {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .services-and-fees div[class*="js-view-dom"],
@@ -52,13 +52,14 @@
 }
 
 .card .card__front {
-  height: 11em;
   width: auto;
   background-color: var(--infoaction--green);
 	backface-visibility: hidden;
 	transition: transform 0.5s;
   transition-timing-function: ease-in-out;
-  padding: 2em;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
 }
 
 .card .card__front h3 {
@@ -68,7 +69,6 @@
 }
 
 .card .card__front img {
-  margin-top: -1em;
   width: 100%;
   height: auto;
 }
@@ -81,14 +81,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 11em;
-  width: auto;
+  width: 100%;
+  height: auto;
   padding: 2em;
   backface-visibility: hidden;
   transition: transform 0.5s;
   transition-timing-function: ease-in-out;
   transform: rotateY(180deg);
-  background: var(--infoaction--pale-green); 
+  background: var(--infoaction--pale-green);
+  aspect-ratio: 4 / 3;
 }
 
 .card .card__back:hover {
