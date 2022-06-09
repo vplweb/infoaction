@@ -1,9 +1,11 @@
-.staff {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2em;
+.staff .phone::before {
+  font-family: 'vpl-icons';
+  content: '\48';
+  padding-right: 0.25em;
 }
 
-h2 + .staff {
-  margin-top: 1em;
+.staff .email::before {
+  font-family: 'vpl-icons';
+  content: '\44';
+  padding-right: 0.25em;
 }
