@@ -26,7 +26,7 @@
 
 #block-views-block-testimonials-block-2 .views-row h3::before {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: -0.25em;
   content: "“";
   font-size: 6em;
   line-height: 1;
@@ -36,3 +36,12 @@
   color: var(--infoaction--green);
 }
 
+#block-views-block-testimonials-block-2 footer {
+  padding: 2em;
+  background: var(--infoaction--light-green);
+}
+
+#block-views-block-testimonials-block-2 h2 {
+  color: var(--infoaction--green);
+  font-weight: 400;
+}
