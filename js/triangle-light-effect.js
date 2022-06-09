@@ -1061,8 +1061,8 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
     xPos : 0,
     yPos : 200,
     zOffset: 100,
-    ambient: 'rgb(0,112,112)',
-    diffuse: 'rgb(211, 232, 232)',
+    ambient: '#007070',
+    diffuse: '#d3e8e8',
     pickedup :true,
     proxy : false,
     currIndex : 0
