@@ -1085,8 +1085,8 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   // Global Properties
   //------------------------------
   var center = FSS.Vector3.create();
-  var container = document.getElementsById('container');
-  var output = document.getElementsById('output');
+  var container = document.getElementById('container');
+  var output = document.getElementById('output');
   var renderer, scene, mesh, geometry, material;
   var canvasRenderer
 
