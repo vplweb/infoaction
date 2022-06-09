@@ -74,7 +74,7 @@ var Delaunay;
   $(document).ready(function() {
 
     function myFunction1() {
-      document.getElementById("demo1").innerHTML = "Hello RaghuRamKondeti, This is Pavan Kumar Sake";
+      document.getElementById("output").innerHTML = "Hello RaghuRamKondeti, This is Pavan Kumar Sake";
       }
   
   var EPSILON = 1.0 / 1048576.0;
