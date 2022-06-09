@@ -3,7 +3,7 @@ var card = document.querySelectorAll(".card");
 var i;
 
 for (i = 0; i < card.length; i++) {
-  card[i].addEventListener("click", function() {
+  card[i].addEventListener("mouseover", function() {
     this.classList.add("flipped");
     console.log('card flip');
   });
