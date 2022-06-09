@@ -1090,6 +1090,11 @@ FSS.CanvasRenderer.prototype.render = function(scene) {
   var renderer, scene, mesh, geometry, material;
   var canvasRenderer
 
+// TEST METHOD
+function myFunction1() {
+  document.getElementById("output").innerHTML = "Hello RaghuRamKondeti, This is Pavan Kumar Sake";
+  }
+
   //------------------------------
   // Methods
   //------------------------------
