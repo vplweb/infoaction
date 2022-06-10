@@ -7,41 +7,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   perspective: 1000px;
+  gap: 1em;
 }
 
 #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
   margin: 1em 0 2em;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   perspective: 1000px;
-}
-
-@media screen and (min-width: 64em) {
-  .services-and-fees div[class*="js-view-dom"],
-  #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
-    perspective: 1000px;
-  }
-  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
-    perspective: 1000px;
-  }
+  gap: 1em;
 }
 
 .card {
@@ -49,6 +30,27 @@
   transform-style: preserve-3d;
   opacity: 0;
   transition-duration: 1s;
+}
+
+@media screen and (min-width: 48em) {
+  .services-and-fees div[class*="js-view-dom"],
+  #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1000px;
+    gap: 1em;
+  }
+  .card {
+    position: relative;
+    width: calc(33% - 0.5em);
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition-duration: 1s;
+  }
 }
 
 .card .card__front {
