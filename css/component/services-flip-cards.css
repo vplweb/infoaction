@@ -21,7 +21,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  perspective: 1000px;
   gap: 1em;
 }
 
@@ -60,7 +59,7 @@
     perspective: 1000px;
     gap: 1em;
   }
-  .card {
+  .views-row {
     position: relative;
     width: calc(25% - 0.5em);
     transform-style: preserve-3d;
