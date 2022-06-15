@@ -32,7 +32,8 @@
 }
 
 @media screen and (min-width: 48em) {
-  .services-and-fees div[class*="js-view-dom"] {
+  .services-and-fees div[class*="js-view-dom"],
+  #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"]  {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -49,7 +50,7 @@
     opacity: 0;
     transition-duration: 1s;
   }
-  #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
+  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -59,7 +60,7 @@
     perspective: 1000px;
     gap: 1em;
   }
-  .views-row {
+  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] .views-row {
     position: relative;
     width: calc(25% - 0.5em);
     transform-style: preserve-3d;
