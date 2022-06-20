@@ -5,6 +5,11 @@
 main {
   padding: 0 1em;
 }
+
+.footer__region-1 {
+  padding: 2em 0;
+  background-color: var(--infoaction--pale-green);
+}
 @media screen and (min-width:  64em /* 1024px /16px where 16px = 1em */) {
   main {
     display: grid;
@@ -88,7 +93,6 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding: 4em 0;
-    background-color: var(--infoaction--pale-green);
   }
 
   .footer__region-1--content {
@@ -110,30 +114,12 @@ main {
   }
 
   .footer__region-2 #block-footer > div {
-    display: grid;
-    grid-column: 2/12;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
+    display: flex;
+    gap: 1em;
   }
 
-  .footer__region-2--content .footer__column-1 {
-      padding: 2em 0;
-      grid-column: 1/2;
-  }
-
-  .footer__region-2--content .footer__column-2 {
-    padding: 2em 0;
-    grid-column: 2/3;
-  }
-
-  .footer__region-2--content .footer__column-3 {
-    padding: 2em 0;
-    grid-column: 3/4;
-  }
-
-  .footer__region-2--content .footer__column-4 {
-    padding: 2em 0;
-    grid-column: 4/5;
+  .footer__region-2--content div[class*="footer__column"] {
+    width: calc(25% - 0.5em);
   }
 
   /* Acnowledgement - Footer */
