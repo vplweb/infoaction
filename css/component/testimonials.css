@@ -56,4 +56,8 @@
   #block-views-block-testimonials-block-2 .testimonials-block footer {
     width: calc(33% - 0.5em);
   }  
+  
+  #block-views-block-testimonials-block-2 .testimonials-block footer {
+    margin-bottom: 1em;
+  }
 }
