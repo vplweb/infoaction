@@ -3,9 +3,12 @@
 }
 
 #block-views-block-testimonials-block-2 .testimonials-block {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
+  display: block;
+}
+
+#block-views-block-testimonials-block-2 .testimonials-block .views-row {
+  width: auto;
+  margin-bottom: 1em;
 }
 
 #block-views-block-testimonials-block-2 .views-row {
@@ -39,4 +42,14 @@
 #block-views-block-testimonials-block-2 footer {
   padding: 2em;
   background: var(--infoaction--light-green);
+}
+
+@media screen and (min-width: 64em) {
+  #block-views-block-testimonials-block-2 .testimonials-block {
+    display: flex;
+  }
+  
+  #block-views-block-testimonials-block-2 .testimonials-block .views-row {
+    width: calc(33% - 0.5em);
+  }  
 }
