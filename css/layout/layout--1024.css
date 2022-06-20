@@ -3,7 +3,7 @@
 /* These styles pertain to boxes that are used solely for structuring the page */
 /* <header> element and layout children */
 main {
-  padding: 0 1em;
+  padding: 2em 1em;
 }
 
 .footer__region-1 {
