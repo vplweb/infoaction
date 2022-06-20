@@ -2,11 +2,13 @@
 /* These use BEM-style naming but don't try to work out the distinction of block or element with these or you might get confused */
 /* These styles pertain to boxes that are used solely for structuring the page */
 /* <header> element and layout children */
+main {
+  padding: 0 1em;
+}
 @media screen and (min-width:  64em /* 1024px /16px where 16px = 1em */) {
   main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: 4em auto;
   }
 
   main .main__region-1 {
