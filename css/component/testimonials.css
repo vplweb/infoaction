@@ -40,8 +40,3 @@
   padding: 2em;
   background: var(--infoaction--light-green);
 }
-
-#block-views-block-testimonials-block-2 h2 {
-  color: var(--infoaction--green);
-  font-weight: 400;
-}

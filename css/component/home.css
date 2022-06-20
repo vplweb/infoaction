@@ -70,21 +70,3 @@
 .contact-us__content:last-of-type {
   border: none;
 }
-
-/* Popular Services */
-
-#block-views-block-services-and-fees-block-2 h4 {
-  margin-top: -0.25em;
-  padding: 0.5em;
-  background-color: var(--very-dark-grey);
-  text-align: center;
-}
-
-#block-views-block-services-and-fees-block-2 h4 a {
-  color: white;
-}
-
-#block-views-block-services-and-fees-block-2 img {
-  width: 100%;
-  height: auto;
-}
