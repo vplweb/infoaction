@@ -44,6 +44,10 @@
   background: var(--infoaction--light-green);
 }
 
+#block-views-block-testimonials-block-2 footer h2 {
+  color: var(--infoaction--green);
+}
+
 @media screen and (min-width: 64em) {
   #block-views-block-testimonials-block-2 .testimonials-block {
     display: flex;
