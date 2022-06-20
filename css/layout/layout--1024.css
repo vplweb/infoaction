@@ -108,18 +108,15 @@ main {
     background-size: 150%;
   }
 
-  .footer__region-2 #block-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
   .footer__region-2 #block-footer > div {
     display: flex;
-    gap: 1em;
+    gap: 2em;
+    width: 80vw;
+    margin: 2em 10vw;
   }
 
   .footer__region-2--content div[class*="footer__column"] {
-    width: calc(25% - 0.5em);
+    width: calc(20% - 0.5em);
   }
 
   /* Acnowledgement - Footer */
