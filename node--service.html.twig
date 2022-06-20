@@ -84,7 +84,7 @@
 
   <div{{ content_attributes }} class="service-node">
     <div class="service-node__body">{{ content.body }}</div>
-    {% if content.field_cost12|render is not empty  %}
+    {% if content.field_cost|render is not empty  %}
     <div class="service-node__rate">
       <h4>Rate</h4>
       <p>{{ content.field_cost12 }} {{ content.field_cost_notes }}</p>
