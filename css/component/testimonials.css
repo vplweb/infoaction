@@ -9,9 +9,6 @@
 #block-views-block-testimonials-block-2 .testimonials-block .views-row {
   width: auto;
   margin-bottom: 1em;
-}
-
-#block-views-block-testimonials-block-2 .views-row {
   padding: 2em;
   background: var(--infoaction--light-green);
   color: var(--infoaction--green);
@@ -46,14 +43,17 @@
 
 #block-views-block-testimonials-block-2 footer h2 {
   color: var(--infoaction--green);
+  font-weight: 400;
 }
 
 @media screen and (min-width: 64em) {
   #block-views-block-testimonials-block-2 .testimonials-block {
     display: flex;
+    gap: 1em;
   }
   
-  #block-views-block-testimonials-block-2 .testimonials-block .views-row {
+  #block-views-block-testimonials-block-2 .testimonials-block .views-row,
+  #block-views-block-testimonials-block-2 .testimonials-block footer {
     width: calc(33% - 0.5em);
   }  
 }
