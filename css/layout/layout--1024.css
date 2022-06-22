@@ -7,9 +7,16 @@ main {
 }
 
 .footer__region-1 {
-  padding: 2em 0;
+  padding: 2em;
   background-color: var(--infoaction--pale-green);
 }
+
+/* Contact Us Footer */
+.footer__region-2 {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
+  background-size: 400%;
+}
+
 @media screen and (min-width:  64em /* 1024px /16px where 16px = 1em */) {
   main {
     display: grid;
@@ -102,11 +109,10 @@ main {
 
   
 /* Contact Us Footer */
-
-  .footer__region-2 {
-    background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
-    background-size: 150%;
+  .footer__region-1 {
+    padding: 2em 0;
   }
+  
 
   .footer__region-2 #block-footer > div {
     display: flex;

@@ -103,10 +103,10 @@
         <p>{{ content.field_quick_estimate }}</p>
       </div>
     {% endif %}
-    {% if content.field_related_resources|render is not empty  %}
+    {% if content.field_resources_used|render is not empty  %}
       <div class="service-aside__related-resources">
         <h2>Resources Used</h2>
-        <p>{{ content.field_related_resources }}</p>
+        <p>{{ content.field_resources_used }}</p>
       </div>
     {% endif %}
   </div>
