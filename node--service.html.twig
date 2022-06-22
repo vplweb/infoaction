@@ -96,17 +96,17 @@
       <p>{{ content.field_what_we_provide }}</p>
     </div>
     {% endif %}
+    {% if content.field_resources_used|render is not empty  %}
+      <div class="service-aside__related-resources">
+        <h3>Resources Used</h3>
+        <div>{{ content.field_resources_used }}</div>
+      </div>
+    {% endif %}
   </div>
   <div class="service-aside">
     {% if content.field_quick_estimate|render is not empty  %}
       <div class="service-aside__webform">
         <p>{{ content.field_quick_estimate }}</p>
-      </div>
-    {% endif %}
-    {% if content.field_resources_used|render is not empty  %}
-      <div class="service-aside__related-resources">
-        <h2>Resources Used</h2>
-        <p>{{ content.field_resources_used }}</p>
       </div>
     {% endif %}
   </div>
