@@ -99,7 +99,7 @@
     {% if content.field_resources_used|render is not empty  %}
       <div class="service-node__resources-used">
         <h3>Resources Used</h3>
-        <div class="service-node__resources-list">{{ content.field_resources_used }}</div>
+        {{ content.field_resources_used }}
       </div>
     {% endif %}
   </div>
