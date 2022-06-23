@@ -17,6 +17,10 @@
   grid-template-columns: 1fr 2fr;
 }
 
+.service-node__resources-used article div {
+  display: flex;
+}
+
 .service-node__resources-used article h2 { 
   display: flex;
   justify-content: center;
