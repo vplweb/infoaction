@@ -42,7 +42,9 @@ global-everything:
       # The next line declares the CSS files we are going to us
       css/theme/footer.css: {}
       css/theme/header.css: {}
-      
+  # The next line declares the JavaScript file we are going to use. 
+  js:
+    js/scripts.js: {}  
 # This section is for the Monster Test page-specific JavaScript files.
 monster-cards:
   # The next line declares the JavaScript file we are going to use. 

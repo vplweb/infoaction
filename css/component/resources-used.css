@@ -16,19 +16,23 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: stretch;
+  background-color: var(--very-dark-grey);
+  min-height: 16em;
 }
 
 .service-node__resources-used > div article h2 {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
   order: 2;
-  margin-top: -0.5em;
-  padding: 0.5em;
-  background-color: var(--very-dark-grey);
+  height: 5em;
+  padding: 0.25em 1em;
   font-size: 0.9em;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.service-node__resources-used > div article h2 span {
+.service-node__resources-used > div article h2 a span {
   color: white;
 }
 
