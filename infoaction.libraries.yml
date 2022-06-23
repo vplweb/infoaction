@@ -29,9 +29,9 @@ global-everything:
       css/component/estimated-fees-form.css: {}
       css/component/home.css: {}
       css/component/quicktabs.css: {}
-      css/component/related-resources.css: {}
       css/component/request-a-quote-form.css: {}
       css/component/resource.css: {}
+      css/component/resources-used.css: {}
       css/component/services.css: {}
       css/component/services-flip-cards.css: {}
       css/component/services-table.css: {}
