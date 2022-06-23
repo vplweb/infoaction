@@ -18,6 +18,9 @@
 }
 
 .service-node__resources-used article h2 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 2/3;
   grid-row: 1/2;
   padding: 1em;
