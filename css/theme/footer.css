@@ -1,5 +1,5 @@
 .footer__region-2--content div[class*="footer"] {
-  padding: 1em 0;
+  padding: 1em;
 }
 .footer__region-2--content h2 {
   margin-bottom: 0.5em;
@@ -35,4 +35,10 @@
 
 .footer__region-3--content a {
   color: var(--infoaction--light-green);
+}
+
+@media screen and (min-width: 64em) {
+  .footer__region-2--content div[class*="footer"] {
+    padding: 0;
+  }
 }
