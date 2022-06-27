@@ -1,23 +1,15 @@
 @media screen and (min-width:  64em /* 1024px /16px where 16px = 1em */) {
-    /* Header */
-    #header {
-      background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
-      background-size: 100%;
-    }
-  
     .header__region-1 {
       grid-column: 1 / 13;
-    }   
+    }
   
     .header__region-2 {
       grid-column: 2 / 6;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1em;
       align-items: center;
-      /* This region gets a margin above because header__region-1 may not appear (might have no content); margin on body would affect header__region-1 */
-      margin-top: 2em;
-      margin-bottom: 2em;
+      margin: 2em 0;
     }
   
     .header__region-3 {
@@ -26,19 +18,13 @@
       gap: 1em;
       align-items: center;
       justify-content: end;
-      /* This region gets a margin above because header__region-1 may not appear (might have no content); margin on body would affect header__region-1 */
       margin-top: 2em;
       margin-bottom: 2em;
     }
   
-    .header__region-4 {
-      padding: 4em 0;
-      grid-column: 2 / 12;
-    }
-  
     /* Main and Asides */
     main {
-        padding: 0;
+      padding: 0;
     }
 
     .main__aside-a {

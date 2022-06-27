@@ -1,3 +1,20 @@
+#header {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
+  background-size: 450%;
+}
+
+@media screen and (min-width: 48em) and (max-width: 63.938em) {
+  #header {
+    background-size: 250%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #header {
+    background-size: 150%;
+  }
+}
+
 .header__region-2 img {
   width: 100%;
   height: auto;

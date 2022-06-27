@@ -1,7 +1,38 @@
+/* Header */
+#header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.header__region-4 {
+  margin: 2em 0;
+  grid-column: 2 / 12;
+}
+  
 /* Main */
 main {
     padding: 1em;
 }
+
+.main__aside-a {
+  grid-column: 2 / 12;
+}
+  
+  .main__aside-b {
+    grid-column: 2 / 12;
+  }
+  
+  .main__aside-a ~ .main__region-1 {
+    grid-column: 2 / 12;
+  }
+  
+  .main__aside-b ~ .main__region-1 {
+    grid-column: 2 / 12;
+  }
+  
+  .main__aside-a + .main__aside-b ~ .main__region-1 {
+    grid-column: 2 / 12;
+  }
 
 /* Footer */
     footer {
