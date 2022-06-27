@@ -38,7 +38,12 @@
   
 /* Main */
 main {
-    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main__region-1 {
+  grid-column: 2 / 12;
 }
 
 .main__aside-a {
@@ -68,7 +73,7 @@ main {
   
     .footer__region-1 {
       grid-column: 1 / 13;
-      padding: 2em 1em;
+      padding: 2em 0;
     }
   
     .footer__region-1 #block-footer-2 {
