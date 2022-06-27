@@ -3,19 +3,10 @@
   .header__region-1 {
     grid-column: 1 / 13;
   }
-
-  .header__region-2 {
-    grid-column: 2 / 12;
-  }
-
-  .header__region-3 {
-    display: grid;
-    grid-column: 2 / 12;
-  }
   
   /* Main */
     main {
-      padding: 0;
+      padding: 1em 0;
   }
 
   .main__aside-a {
