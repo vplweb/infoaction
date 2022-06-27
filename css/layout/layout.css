@@ -27,8 +27,13 @@
   grid-column: 2 / 12;
 }
 
-.header__region-4 {
+/* Hero text */
+.frontpage .header__region-4 {
   padding: 5em 0;
+}
+
+.header__region-4 {
+  padding: 1em 0;
 }
   
 /* Main */
