@@ -58,6 +58,11 @@
 }
 
 @media screen and (min-width: 64em) {
+
+  #header {
+    background-size: 100%;
+  }
+
   .header__region-4 h2 {
     font-size: 5em;
   }
