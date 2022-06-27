@@ -37,6 +37,10 @@
     }
   
     /* Main and Asides */
+    main {
+        padding: 0;
+    }
+
     .main__aside-a {
       grid-column: 2 / 4;
     }

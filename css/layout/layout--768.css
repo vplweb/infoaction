@@ -1,4 +1,9 @@
 @media screen and (min-width: 48em) and (max-width: 63.938em) {
+  /* Main */
+    main {
+      padding: 0;
+  }
+
   /* Footer */
   footer {
     display: grid;

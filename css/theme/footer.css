@@ -1,17 +1,17 @@
 .footer__region-1 {
   background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
-  background-size: 300%;
+  background-size: 450%;
 }
 
 @media screen and (min-width: 48em) and (max-width: 63.938em) {
   .footer__region-1 {
-    background-size: 200%;
+    background-size: 250%;
   }
 }
 
 @media screen and (min-width: 64em) {
   .footer__region-1 {
-    background-size: 100%;
+    background-size: 150%;
   }
 }
 
@@ -43,6 +43,8 @@
 }
 
 .footer__region-2 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   font-size: 0.8em;
