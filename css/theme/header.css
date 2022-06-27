@@ -48,17 +48,8 @@
     text-align: center;
   }
   
-  #block-infoaction-main-menu ul > li {
-    width: 33%;
-  }
-  
   #block-infoaction-main-menu > ul > li a {
-    color: white;
-    border: none;
     padding: 0.5em;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 700;
   }
 
   .header__region-4 h2 {
