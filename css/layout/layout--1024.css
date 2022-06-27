@@ -18,6 +18,11 @@
       align-items: center;
       justify-content: end;
     }
+
+        /* Hero text */
+    .path-frontpage .header__region-4 {
+      padding: 6em 0;
+    }
   
     /* Main and Asides */
     main {
