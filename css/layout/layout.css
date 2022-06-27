@@ -1,0 +1,116 @@
+/* These are the SMACSS sections of a theme; they don't work well with Drupal or BEM but are required to make a theme work */
+/* Layout */
+    /* Might be useful, might be not useful https://webuild.envato.com/blog/how-to-scale-and-maintain-legacy-css-with-sass-and-smacss/; 
+        jw: I think this needs to exist because of Drupal's concept of "Regions" which exist for every single page that Drupal makes; we'll need to describe them */
+/* Layout the regions in the <header> element */
+/* These use BEM-style naming but don't try to work out the distinction of block or element with these or you might get confused */
+/* This stylesheet is for layouts up to 1024px */
+/* Sets header background image and size */
+#header {
+    background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
+    background-size: 200%;
+  }
+
+  .header__region-1 {
+    grid-column: 1 / 13;
+  }   
+
+  .header__region-2 {
+    grid-column: 2 / 12;
+    display: grid;
+    padding: 0 5em;
+    align-items: center;
+  }
+
+  .header__region-3 {
+    grid-column: 2 / 12;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .header__region-4 {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1em;
+    align-items: center;   
+  }
+
+
+/* <main> element and layout children */
+    /* Region position & widths */
+    .main__region-1 {
+        grid-column: 2 / 12;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1em;
+    }
+
+/* The <main element can contain asides. They are added to the HTML if they have content. If they don't then they are not added and the regions assume the width of columns that are available */
+/* Asides are 10 columns wide until viewport is 1024px (or 64em or desktop width) when they become 2 columns wide  and come at the beginning of the <main> element  and are placed in reading order by CSS, this simplifies how we can write the CSS */
+.main__aside-a {
+    grid-column: 2 / 12;
+    background-color: coral;
+    grid-row: 1;
+}
+
+.main__aside-b {
+    grid-column: 2 / 12;
+    background-color: pink;
+    grid-row: 5;
+}
+
+/* Region position & widths: aside-A */
+.main__aside-a ~ .main__region-1{
+    grid-column: 2 / 12;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid navy;
+}
+
+/* Region position & widths: aside-B */
+.main__aside-b ~ .main__region-1 {
+    grid-column: 2 / 12;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid navy;
+}
+
+.main__aside-a + .main__aside-b ~ .main__region-1 {
+    grid-column: 2 / 12;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid navy;
+}
+
+.footer__region-1 {
+    grid-column: 1 / 13;
+    background-color: var(--light-grey);
+    /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.footer__region-2 {
+    grid-column: 1 / 13;
+    background-color: var(--dark-grey);
+    /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.footer__region-3 {
+    grid-column: 1 / 13;
+    background-color: var(--very-dark-grey);
+    color: var(--grey);
+    /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1em;
+}
+
+.footer__region-1--content,
+.footer__region-2--content,
+.footer__region-3--content {
+    grid-column: 2 / 12;
+}

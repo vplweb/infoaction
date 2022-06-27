@@ -1,26 +1,39 @@
-.footer__region-2--content div[class*="footer"] {
+.footer__region-1 {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
+  background-size: 150%;
+}
+
+.footer__region-1--content div[class*="footer"] {
   padding: 1em;
 }
-.footer__region-2--content h2 {
+
+.footer__region-1--content h2 {
   margin-bottom: 0.5em;
   color: white;
 }
 
-.footer__region-2--content p {
+.footer__region-1--content p {
   font-size: 0.9em;
   color: white;
 }
 
-.footer__region-2--content a {
+.footer__region-1--content a {
   color: white;
   border-bottom-color: white;
 }
 
-.footer__region-2--content img {
-  width: 60%;
+.footer__region-1--content img {
+  width: 50%;
 }
 
-.footer__region-3--content ul {
+/* Footer - Copyright */
+.footer__region-2 {
+  background-color: var(--infoaction--dark-green);
+  color: white;
+  padding: 1em 0;
+}
+
+.footer__region-2 ul {
   list-style: none;
   display: flex;
   font-size: 0.8em;
@@ -28,17 +41,11 @@
   color: var(--infoaction--light-green);
 }
 
-.footer__region-3--content li {
-  padding: 0 1em;
+.footer__region-2 li {
+  padding: 0 0.5em;
   color: var(--infoaction--light-green);
 }
 
-.footer__region-3--content a {
+.footer__region-2 a {
   color: var(--infoaction--light-green);
-}
-
-@media screen and (min-width: 64em) {
-  .footer__region-2--content div[class*="footer"] {
-    padding: 0;
-  }
 }

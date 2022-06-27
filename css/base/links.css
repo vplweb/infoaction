@@ -47,7 +47,7 @@ button:hover,
   height: 38px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  border: 5px solid white;
+  border: 5px solid transparent;
 }
 
 .twitter {
@@ -56,9 +56,4 @@ button:hover,
 
 .linkedin {
   background-image: url("/sites/ntimmy/themes/infoaction/images/logo-linkedin-round.svg");
-}
-
-.footer__region-2--content .twitter,
-.footer__region-2--content .linkedin {
-  border-color: transparent;
 }

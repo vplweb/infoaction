@@ -1,0 +1,138 @@
+/* NEW FROM X6 */
+
+/* Layout the regions in the <header> element */
+/* These use BEM-style naming but don't try to work out the distinction of block or element with these or you might get confused */
+/* These styles pertain to boxes that are used solely for structuring the page */
+/* <header> element and layout children */
+@media screen and (min-width:  64em /* 1024px /16px where 16px = 1em */) {
+    .header__region-1 {
+        grid-column: 1 / 13;
+    }
+
+    .header__region-2 {
+        grid-column: 2 / 6;
+        /* The contents of this region are dsiplayed in a grid layout */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        align-items: center;
+        /* This region gets a margin above because header__region-1 may not appear (might have no content); margin on body would affect header__region-1 */
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .header__region-3 {
+        grid-column: 6 / 12;
+        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1em;
+        align-items: center;
+        justify-content: end;
+        /* This region gets a margin above because header__region-1 may not appear (might have no content); margin on body would affect header__region-1 */
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .header__region-4 {
+        grid-column: 2 / 12;
+    }
+
+    .header__region-5 {
+        /* This region needs to span the entire page width in order to get the separation line and not require extra HTML shenanigans */
+        grid-column: 1 / 13;
+        border-top: 1px solid grey;
+        /* The .header__region-5 element displays its content in a grid of 12 columns as well */
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1em;
+        height: 4em;
+    }
+
+    /* <main> element and layout children */
+    /* The <main element can contain asides. They are added to the HTML if they have content. If they don't then they are not added and the regions assume the width of columns that are available */
+    /* <aside>s are 2 columns wide (at desktop width) and come at the beginning of the <main> element and are placed in reading order by CSS;
+    In the HTML they are
+    aside-A
+    aside-B
+    region-1
+    region-2
+    region-3
+    this simplifies how we can write the CSS using sibling selectors which makes things uncomplicated. */
+    .main__aside-a {
+        grid-column: 2 / 4;
+        grid-row: 1 / span 3;
+        background-color: coral;
+    }
+
+    .main__aside-b {
+        grid-column: 10 / 12;
+        grid-row: 1 / span 3;
+        background-color: pink;
+    }
+
+    /* Region position & widths: aside-A; If the aside-a exists this will select the regions that follow in the HTML and position/size them */
+    .main__aside-a ~ .main__region-1,
+    .main__aside-a ~ .main__region-2,
+    .main__aside-a ~ .main__region-3 {
+        grid-column: 4 / 12;
+        background-color: cornflowerblue;
+    }
+
+    /* Region position & widths: aside-B; If the aside-b exists this will select the regions that follow in the HTML and position/size them */
+    .main__aside-b ~ .main__region-1,
+    .main__aside-b ~ .main__region-2,
+    .main__aside-b ~ .main__region-3 {
+        grid-column: 2 / 10;
+        background-color: cornflowerblue;
+    }
+
+    /* Region position & widths: aside-A AND aside-B; If the aside-a and aside-b both exist this will select the regions that follow in the HTML and position/size them */
+    .main__aside-a + .main__aside-b ~ .main__region-1,
+    .main__aside-a + .main__aside-b ~ .main__region-2,
+    .main__aside-a + .main__aside-b ~ .main__region-3 {
+        grid-column: 4 / 10;
+        background-color: cornflowerblue;
+        border-bottom: 1px solid navy;
+    }
+
+    /* <footer> element and layout children */
+    .footer__region-1 {
+        grid-column: 1 / 13;
+        background-color: var(--light-grey);
+        /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1em;
+    }
+
+    .footer__region-2 {
+        grid-column: 1 / 13;
+        background-color: var(--dark-grey);
+        /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1em;
+    }
+
+    .footer__region-3 {
+        grid-column: 1 / 13;
+        background-color: var(--very-dark-grey);
+        color: var(--grey);
+        /* The .footer__region-1 element displays its content in a grid of 12 columns as well */
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1em;
+    }
+    
+    .footer__region-1--content,
+    .footer__region-2--content,
+    .footer__region-3--content {
+        grid-column: 2 / 12;
+    }
+
+    /* Analysis Div */
+    /* .analysis {
+        display: none;
+    } */
+}
