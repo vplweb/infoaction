@@ -43,7 +43,6 @@
   #block-infoaction-main-menu > ul {
     display: flex;
     padding: 0;
-    width: 100vw;
     list-style: none;
     justify-content: space-between;
     text-align: center;
