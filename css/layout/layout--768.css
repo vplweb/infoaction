@@ -3,6 +3,10 @@
   .header__region-1 {
     grid-column: 1 / 13;
   }
+
+  .header__region-2 {
+    grid-column: 5 / 9;
+  }
   
   /* Main */
     main {
