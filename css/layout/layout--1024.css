@@ -64,6 +64,7 @@
   
     .footer__region-1 {
       grid-column: 1 / 13;
+      padding: 2em 0;
     }
   
     .footer__region-1 #block-footer-2 {
@@ -84,7 +85,7 @@
     .footer__region-1 .footer__column-2,
     .footer__region-1 .footer__column-3,
     .footer__region-1 .footer__column-4 {
-      width: calc(25%);
+      width: 25%;
       flex-direction: column;
     }
 

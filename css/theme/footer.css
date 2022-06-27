@@ -3,10 +3,6 @@
   background-size: 150%;
 }
 
-.footer__region-1--content div[class*="footer"] {
-  padding: 1em;
-}
-
 .footer__region-1--content h2 {
   margin-bottom: 0.5em;
   color: white;
@@ -17,7 +13,7 @@
   color: white;
 }
 
-.footer__region-1--content a {
+.footer__region-1--content a:not(.twitter, .linkedin) {
   color: white;
   border-bottom-color: white;
 }
