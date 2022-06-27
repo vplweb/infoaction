@@ -63,6 +63,18 @@
     background-size: 100%;
   }
 
+  #block-infoaction-main-menu > ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #block-infoaction-main-menu > ul > li {
+    padding:0 1em;
+  }
+
   .header__region-4 h2 {
     font-size: 5em;
   }
