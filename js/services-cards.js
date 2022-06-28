@@ -4,7 +4,7 @@ var i;
 
 for (i = 0; i < card.length; i++) {
   card[i].addEventListener("mouseover", function() {
-    this.classList.add("flipped");
+    this.classList.toggle("flipped");
     console.log('card flip');
   });
 }
