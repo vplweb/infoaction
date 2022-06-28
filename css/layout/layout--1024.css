@@ -7,14 +7,14 @@
       grid-column: 2 / 6;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1em;
+      grid-column-gap: 1em;
       align-items: baseline;
     }
   
     .header__region-3 {
       grid-column: 6 / 12;
       display: grid;
-      gap: 1em;
+      grid-column-gap: 1em;
       align-items: center;
       justify-content: end;
     }
@@ -53,7 +53,7 @@
     footer {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 1em;
+      grid-column-gap: 1em;
     }
   
     .footer__region-1 {
@@ -63,7 +63,7 @@
   
     .footer__region-1 #block-footer-2 {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 1em;
     }
     .footer__region-1 #block-footer-2 div {
       display: flex;
