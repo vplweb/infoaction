@@ -52,6 +52,8 @@
     /* Footer */
     footer {
       display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1em;
     }
   
     .footer__region-1 {

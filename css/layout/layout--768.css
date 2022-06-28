@@ -5,7 +5,7 @@
   }
 
   .header__region-2 {
-    grid-column: 5 / 9;
+    grid-column: 6 / 8;
   }
 
   /* Hero text */
@@ -55,9 +55,9 @@
 
   .footer__region-1 #block-footer-2 > div {
     grid-column: 2 / 12;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
   }
 
   .footer__region-1 .footer__column-1,
