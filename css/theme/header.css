@@ -3,20 +3,32 @@
   background-size: 450%;
 }
 
+.header__region-1 {
+  min-height: 1em;
+}
+
 .header__region-2 img {
   width: 100%;
   height: auto;
 }
 
 #block-infoaction-main-menu > ul {
-  margin: 2em 0 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  display: flex;
 }
 
 #block-infoaction-main-menu > ul > li {
-  padding: 0.5em;
+  padding: 0.25em;
+  width: 33%;
+  font-size: 0.9em;
+  border-right: 1px solid white;
+  padding: 0 0.5em;
+}
+
+#block-infoaction-main-menu > ul > li:last-of-type {
+  border: none;
 }
 
 #block-infoaction-main-menu > ul > li a {
@@ -68,11 +80,12 @@
     padding: 0;
     list-style: none;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
   }
 
   #block-infoaction-main-menu > ul > li {
     padding:0 1em;
+    border: none;
   }
 
   .header__region-4 h2 {
