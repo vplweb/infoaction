@@ -2,7 +2,7 @@
 #header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1em;
+  grid-column-gap: 1em;
 }
 
 .header__region-1,
@@ -41,7 +41,7 @@
 main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1em;
+    grid-column-gap: 1em;
 }
 
 .main__region-1 {
@@ -72,7 +72,7 @@ main {
     footer {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: 1em;
+      grid-column-gap: 1em;
     }
   
     .footer__region-1 {
@@ -83,6 +83,7 @@ main {
     .footer__region-1 #block-footer-2 {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 1em;
     }
   
     .footer__region-1 #block-footer-2 > div {
