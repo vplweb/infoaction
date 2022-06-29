@@ -13,22 +13,37 @@
 }
 
 #block-infoaction-main-menu > ul {
-  margin: 0;
+  margin: 0.5em 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
 }
 
 #block-infoaction-main-menu > ul > li {
-  padding: 0.25em;
+  padding: 0.5em;
   width: 33%;
-  font-size: 0.9em;
-  border-right: 1px solid white;
-  padding: 0 0.5em;
+  font-size: 0.7em;
+  text-align:center;
 }
 
-#block-infoaction-main-menu > ul > li:last-of-type {
-  border: none;
+#block-infoaction-main-menu > ul > li::before {
+  display:block;
+  margin:auto;
+  content: '';
+   width: 2.5em;
+   height: 2.75em;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+#block-infoaction-main-menu > ul > li:first-of-type::before {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/quote.svg');
+}
+
+#block-infoaction-main-menu > ul > li:nth-of-type(2)::before {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/about.svg');
+}
+#block-infoaction-main-menu > ul > li:last-of-type::before {
+  background-image: url('/sites/ntimmy/themes/infoaction/images/services.svg');
 }
 
 #block-infoaction-main-menu > ul > li a {
@@ -60,6 +75,12 @@
     text-align: center;
   }
   
+  #block-infoaction-main-menu > ul > li:first-of-type::before,
+  #block-infoaction-main-menu > ul > li:nth-of-type(2)::before,
+  #block-infoaction-main-menu > ul > li:last-of-type::before {
+    display: none !important;
+  }
+  
   #block-infoaction-main-menu > ul > li a {
     padding: 0.5em;
   }
@@ -80,12 +101,19 @@
     padding: 0;
     list-style: none;
     justify-content: space-between;
-    text-align: left;
+    align-items: flex-end;
+    text-align: center;
   }
 
   #block-infoaction-main-menu > ul > li {
     padding:0 1em;
     border: none;
+  }
+
+  #block-infoaction-main-menu > ul > li:first-of-type::before,
+  #block-infoaction-main-menu > ul > li:nth-of-type(2)::before,
+  #block-infoaction-main-menu > ul > li:last-of-type::before {
+    display: none !important;
   }
 
   .header__region-4 h2 {
