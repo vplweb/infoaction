@@ -47,6 +47,7 @@ global-everything:
       css/theme/header.css: {}
   # The next line declares the JavaScript file we are going to use. 
   js:
+    js/alerts.js: {}
     js/scripts.js: {}  
 # This section is for the Monster Test page-specific JavaScript files.
 monster-cards:
