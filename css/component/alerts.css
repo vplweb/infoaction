@@ -1,6 +1,6 @@
 .alert__body {
   position: relative;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 .alert__body p {
@@ -58,20 +58,9 @@ span.close {
   position: absolute;
   color: var(--dark-grey);
   font-size: 2rem;
-  top: -0.7rem;
+  top: -0.25rem;
   right: 0;
-  width: 4rem;
-}
-
-/* Service Alerts */
-#block-views-block-alerts-block-1 .views-row {
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--light-grey);
-}
-
-#block-views-block-alerts-block-1 .views-row:last-of-type {
-  border: none;
+  width: 2rem;
 }
 
 /* Show & Hide */
