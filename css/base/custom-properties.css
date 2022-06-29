@@ -18,6 +18,11 @@
    --infoaction--light-green: rgb(211, 232, 232);
    --infoaction--dark-green: rgb(9, 58, 58);
 
+   /* Utility colours */
+  --information: rgb(173,221,162);
+  --emergency:  rgb(246,141,150);
+  --warning: rgb(254,219,147);
+
   /* Typography sizes */
   --line-height: 1.5;
   --h1: 2.5em;

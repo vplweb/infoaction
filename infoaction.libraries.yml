@@ -25,6 +25,7 @@ global-everything:
     # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'compent', which is the Drupal term for SMACSS's "module"
     component:
       css/component/about.css: {}
+      css/componet/alerts.css: {}
       css/component/client-feedback-form.css: {}
       css/component/contact-form.css: {}
       css/component/detailed-quote-form.css: {}

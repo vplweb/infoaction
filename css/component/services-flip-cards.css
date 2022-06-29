@@ -96,6 +96,7 @@
 
 .card .card__back p {
   padding: 0 2em 2em 2em;
+  font-size: 0.9em;
 }
 
 .card .card__back:hover {

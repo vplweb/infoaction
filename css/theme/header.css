@@ -109,9 +109,13 @@
   }
 
   #block-infoaction-main-menu > ul > li {
-    padding:0 1em;
+    padding: 0;
     border: none;
     font-size: 1em;
+  }
+
+  #block-infoaction-main-menu > ul > li:last-of-type {
+    text-align: right;
   }
 
   #block-infoaction-main-menu > ul > li:first-of-type::before,
