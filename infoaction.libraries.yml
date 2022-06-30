@@ -48,7 +48,11 @@ global-everything:
   # The next line declares the JavaScript file we are going to use. 
   js:
     js/alerts.js: {}
-    js/scripts.js: {}  
+    js/scripts.js: {} 
+    js/triangle-light-effect.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal 
 # This section is for the Monster Test page-specific JavaScript files.
 monster-cards:
   # The next line declares the JavaScript file we are going to use. 
