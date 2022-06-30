@@ -49,15 +49,14 @@ global-everything:
   js:
     js/alerts.js: {}
     js/scripts.js: {} 
-    js/triangle-light-effect.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal 
-# This section is for the Monster Test page-specific JavaScript files.
-monster-cards:
+# This section is for Triangle Pattern Light Effects
+  triangle-light-effect:      
   # The next line declares the JavaScript file we are going to use. 
     js:
-      js/monster-cards.js: {}
+      js/triangle-light-effect.js: {}
+    dependencies:
+    - core/jquery
+    - core/drupal
 # This section is for the Services and Fees page-specific JavaScript files.
 services-cards:
   # The next line declares the JavaScript file we are going to use. 
