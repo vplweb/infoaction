@@ -10,7 +10,9 @@
 }
 
 .header__region-1,
-.header__region-2 {
+.header__region-2,
+.header__region-3,
+.header__region-4 {
   z-index: 500;
 }
 
