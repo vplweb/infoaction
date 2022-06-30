@@ -103,12 +103,11 @@
       </div>
     {% endif %}
   </div>
+  {% if content.field_quick_estimate|render is not empty  %}
   <div class="service-aside">
-    {% if content.field_quick_estimate|render is not empty  %}
-      <div class="service-aside__webform">
+  <div class="service-aside__webform">
         <p>{{ content.field_quick_estimate }}</p>
       </div>
-    {% endif %}
   </div>
-
+  {% endif %}
 </article>
