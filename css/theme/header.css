@@ -1,11 +1,21 @@
-#header {
+#container {
   background-image: url('/sites/ntimmy/themes/infoaction/images/pattern.svg');
   background-size: 450%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.header__region-1 {
-  padding-bottom: 1em;
-  min-height: 1em;
+#output {
+  position: absolute;
+}
+
+.header__region-1,
+.header__region-2 {
+  z-index: 500;
+}
+
+.header__region-2 {
+  margin: 1em 0 0.25em 0;
 }
 
 .header__region-2 img {
@@ -63,7 +73,7 @@
 }
 
 @media screen and (min-width: 48em) and (max-width: 63.938em) {
-  #header {
+  #container {
     background-size: 250%;
   }
 
@@ -95,8 +105,7 @@
 }
 
 @media screen and (min-width: 64em) {
-
-  #header {
+  #container {
     background-size: 120%;
   }
 
