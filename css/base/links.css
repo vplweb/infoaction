@@ -20,6 +20,7 @@ button,
   color: white;
   font-weight: 700;
   border: none;
+  white-space: normal;
 }
 
 input[type="submit"]:hover,
