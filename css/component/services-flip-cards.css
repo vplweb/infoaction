@@ -2,7 +2,7 @@
   padding-bottom: 2em;
 }
 
-.services-and-fees div[class*="js-view-dom"],
+.services-and-fees main div[class*="js-view-dom"],
 #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"] {
   margin: 0;
   padding: 0;
@@ -112,7 +112,7 @@
 }
 
 @media screen and (min-width: 48em) {
-  .services-and-fees div[class*="js-view-dom"],
+  .services-and-fees main div[class*="js-view-dom"],
   #block-views-block-services-and-fees-block-1 div[class*="js-view-dom"]  {
     margin: 0;
     padding: 0;
