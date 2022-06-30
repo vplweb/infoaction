@@ -19,22 +19,19 @@ global-everything:
       css/base/webforms.css: {}
     # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'layout'
     layout:
-      css/layout/layout.css: {}
-      css/layout/layout--768.css: {}
       css/layout/layout--1024.css: {}
     # For Drupal to work, it *demands* we organize our library files the way it wants. It uses sections based on SMACSS methodology to decide how to collect and aggregate CSS. The section we're using is 'compent', which is the Drupal term for SMACSS's "module"
     component:
       css/component/about.css: {}
-      css/component/alerts.css: {}
       css/component/client-feedback-form.css: {}
       css/component/contact-form.css: {}
       css/component/detailed-quote-form.css: {}
       css/component/estimated-fees-form.css: {}
       css/component/home.css: {}
       css/component/quicktabs.css: {}
+      css/component/related-resources.css: {}
       css/component/request-a-quote-form.css: {}
       css/component/resource.css: {}
-      css/component/resources-used.css: {}
       css/component/services.css: {}
       css/component/services-flip-cards.css: {}
       css/component/services-table.css: {}
@@ -45,18 +42,23 @@ global-everything:
       # The next line declares the CSS files we are going to us
       css/theme/footer.css: {}
       css/theme/header.css: {}
+# The next line declares the JavaScript file we are going to use. 
+js:
+  js/alerts.js: {}
+  js/scripts.js: {} 
+# This section is for Triangle Pattern Light Effects
+triangle-light-effect:      
   # The next line declares the JavaScript file we are going to use. 
   js:
-    js/alerts.js: {}
-    js/scripts.js: {} 
-# This section is for Triangle Pattern Light Effects
-  triangle-light-effect:      
-  # The next line declares the JavaScript file we are going to use. 
-    js:
-      js/triangle-light-effect.js: {}
-    dependencies:
+    js/triangle-light-effect.js: {}
+  dependencies:
     - core/jquery
     - core/drupal
+# This section is for the Monster Test page-specific JavaScript files.
+monster-cards:
+  # The next line declares the JavaScript file we are going to use. 
+    js:
+      js/monster-cards.js: {}
 # This section is for the Services and Fees page-specific JavaScript files.
 services-cards:
   # The next line declares the JavaScript file we are going to use. 
