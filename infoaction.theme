@@ -35,9 +35,6 @@ function infoaction_page_attachments_alter(&$page){
   if($path == '/node/31' ) {
     $page['#attached']['library'][] = 'infoaction/triangle-light-effect';
   }
-  else if($path == '/node/7') {
-    $page['#attached']['library'][] = 'infoaction/calculator';
-  }
   else if($path == '/services-and-fees') {
     $page['#attached']['library'][] = 'infoaction/services-cards';
   }
