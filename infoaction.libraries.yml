@@ -42,35 +42,35 @@ global-everything:
       # The next line declares the CSS files we are going to us
       css/theme/footer.css: {}
       css/theme/header.css: {}
-# The next line declares the JavaScript file we are going to use. 
-js:
-  js/alerts.js: {}
-  js/scripts.js: {} 
-# This section is for Triangle Pattern Light Effects
-triangle-light-effect:      
   # The next line declares the JavaScript file we are going to use. 
   js:
-    js/triangle-light-effect.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
-# This section is for the Monster Test page-specific JavaScript files.
-monster-cards:
-  # The next line declares the JavaScript file we are going to use. 
+    js/alerts.js: {}
+    js/scripts.js: {} 
+  # This section is for Triangle Pattern Light Effects
+  triangle-light-effect:      
+    # The next line declares the JavaScript file we are going to use. 
     js:
-      js/monster-cards.js: {}
-# This section is for the Services and Fees page-specific JavaScript files.
-services-cards:
-  # The next line declares the JavaScript file we are going to use. 
-    js:
-      js/services-cards.js: {}
-# This section is for the Calculator page-specific JavaScript files.
-calculator:
-  # The next line declares the JavaScript file we are going to use. 
-    js:
-      js/calculator.js: {}
-# This section is for the Testimonial Slider page-specific JavaScript files.
-slider:
-  # The next line declares the JavaScript file we are going to use. 
-    js:
-      js/slider.js: {}
+      js/triangle-light-effect.js: {}
+    dependencies:
+      - core/jquery
+      - core/drupal
+  # This section is for the Monster Test page-specific JavaScript files.
+  monster-cards:
+    # The next line declares the JavaScript file we are going to use. 
+      js:
+        js/monster-cards.js: {}
+  # This section is for the Services and Fees page-specific JavaScript files.
+  services-cards:
+    # The next line declares the JavaScript file we are going to use. 
+      js:
+        js/services-cards.js: {}
+  # This section is for the Calculator page-specific JavaScript files.
+  calculator:
+    # The next line declares the JavaScript file we are going to use. 
+      js:
+        js/calculator.js: {}
+  # This section is for the Testimonial Slider page-specific JavaScript files.
+  slider:
+    # The next line declares the JavaScript file we are going to use. 
+      js:
+        js/slider.js: {}
