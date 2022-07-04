@@ -12,7 +12,6 @@
   padding: 2em;
   background: var(--infoaction--light-green);
   color: var(--infoaction--green);
-  box-shadow: 0 0.25em 1em rgba(0,0,0,.5);
 }
 
 #block-views-block-testimonials-block-2 .views-row h3::before {
@@ -56,6 +55,7 @@
   #block-views-block-testimonials-block-2 .testimonials-block .views-row,
   #block-views-block-testimonials-block-2 .testimonials-block footer {
     width: calc(33% - 0.5em);
+    box-shadow: 0 0.25em 1em rgba(0,0,0,.5);
   }  
   
   #block-views-block-testimonials-block-2 .testimonials-block footer {
