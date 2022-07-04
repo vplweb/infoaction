@@ -1,12 +1,12 @@
-.services-and-fees div[class*="js-view-dom"] {
+.services-and-fees #block-infoaction-content div[class*="js-view-dom"] {
   display: grid; 
   grid-gap: 1em;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
 }
 
-.services-and-fees div[class*="js-view-dom"] header,
-.services-and-fees div[class*="js-view-dom"] footer {
+.services-and-fees #block-infoaction-content div[class*="js-view-dom"] header,
+.services-and-fees #block-infoaction-content div[class*="js-view-dom"] footer {
   grid-column: 1/5;
 }
 
