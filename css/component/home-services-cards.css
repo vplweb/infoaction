@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 1em;
+  position: relative;
 }
 
 #block-views-block-services-and-fees-block-2 .views-row {
