@@ -4,6 +4,12 @@ body {
   min-height: 100vh;
 }
 
+#container,
+#main-content,
+#footer {
+  flex: 1 1 auto;
+}
+
 /* Header */
 #header {
   display: grid;
