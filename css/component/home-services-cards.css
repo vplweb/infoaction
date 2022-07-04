@@ -1,7 +1,34 @@
 #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   grid-column-gap: 1em;
+}
+
+#block-views-block-services-and-fees-block-2 .views-row {
+  margin-bottom: 1em;
+  background-color:var(--infoaction--green);
+  box-shadow: 0 0.25em 0.5em rgba(0,0,0,.25);
+}
+
+@media screen and (min-width: 48em) and (max-width: 63.938em) {
+  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+  }
+
+}
+
+@media screen and (min-width: 64em) {
+  #block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1em;
+  }
+
+  #block-views-block-services-and-fees-block-2 .views-row {
+    height: 100%;
+  }
 }
 
 #block-views-block-services-and-fees-block-2 header {
@@ -9,12 +36,6 @@
   position: absolute;
   margin-top: -2em;
   right: 0;
-}
-
-#block-views-block-services-and-fees-block-2 .views-row {
-  height: 100%;
-  background-color:var(--infoaction--green);
-  box-shadow: 0 0.25em 0.5em rgba(0,0,0,.25);
 }
 
 #block-views-block-services-and-fees-block-2 .views-row:hover {
