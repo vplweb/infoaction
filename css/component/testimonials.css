@@ -55,7 +55,7 @@
   #block-views-block-testimonials-block-2 .testimonials-block .views-row,
   #block-views-block-testimonials-block-2 .testimonials-block footer {
     width: calc(33% - 0.5em);
-    box-shadow: 0 0.25em 1em rgba(0,0,0,.5);
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.25);
   }  
   
   #block-views-block-testimonials-block-2 .testimonials-block footer {
