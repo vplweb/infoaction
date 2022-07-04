@@ -109,7 +109,8 @@ main {
     .footer__region-1 .footer__column-1,
     .footer__region-1 .footer__column-2,
     .footer__region-1 .footer__column-3,
-    .footer__region-1 .footer__column-4 {
+    .footer__region-1 .footer__column-4,
+    .footer__region-1 .footer__column-5 {
       width: 100%;
       flex-direction: column;
       padding: 0.5em 0;
