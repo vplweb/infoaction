@@ -17,6 +17,11 @@
   box-shadow: 0 0.25em 0.5em rgba(0,0,0,.25);
 }
 
+#block-views-block-services-and-fees-block-2 .views-row:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
 #block-views-block-services-and-fees-block-2 h2 {
   margin-bottom: 0.25em;
 }
