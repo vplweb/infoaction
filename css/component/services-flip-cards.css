@@ -1,19 +1,18 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
 .services-and-fees #block-infoaction-content div[class*="js-view-dom"] {
   display: grid; 
   grid-gap: 1em;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   margin: 0 auto;
 }
 
 .services-and-fees #block-infoaction-content div[class*="js-view-dom"] header,
 .services-and-fees #block-infoaction-content div[class*="js-view-dom"] footer {
-  grid-column: 1/5;
-}
-
-
-img {
-  width: 100%;
-  height: auto;
+  grid-column: 1/2;
 }
 
 .card {
@@ -25,64 +24,99 @@ img {
   box-shadow: 0 0.25em 0.5em rgba(0,0,0,.25);
 }
 
-.card .face {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .card .face.face__front {
   box-sizing: border-box;
   padding: 2em;
 }
 
 .card .face.face__back {
-  transition: 0.25s;
-  background: rgb(0,112,112);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
-.card .face.face__back h3 {
-  padding: 0 0.25em;
-  color: white;
-  text-align: center;
-  transition: 0.5s;
+@media screen and (min-width: 48em) and (max-width: 63.938em) {
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] {
+    display: grid; 
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] header,
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] footer {
+    grid-column: 1/3;
+  }
 }
 
-.card:hover .face.face__back {
-  height: 60px;
+
+@media screen and (min-width: 64em) {
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] {
+    display: grid; 
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+  }
+
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] header,
+  .services-and-fees #block-infoaction-content div[class*="js-view-dom"] footer {
+    grid-column: 1/5;
+  }
+ 
+  .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card .face.face__back {
+    transition: 0.25s;
+    background: rgb(0,112,112);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .face.face__back h3 {
+    padding: 0 0.25em;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  .card:hover .face.face__back {
+    height: 60px;
+  }
+  
+  .card:hover .face.face__back h3 {
+    opacity: 0;
+    font-size: 0px;
+    transition: 0.1s;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+  }
+  
+  .card .face.face__back:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .card .face.face__back img {
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+  }
+  
+  .card:hover .face.face__back img {
+    width: 80px;
+  }
+
 }
 
-.card:hover .face.face__back h3 {
-  opacity: 0;
-  font-size: 0px;
-  transition: 0.1s;
-}
-
-.card:hover {
-  cursor: pointer;
-}
-
-.card .face.face__back:before{
-  content:'';
-  position: absolute;
-  top:0;
-  left:0;
-  width: 50%;
-  height: 100%;
-}
-
-.card .face.face__back img {
-  margin: 0;
-  padding: 0;
-  transition: 0.25s;
-}
-
-.card:hover .face.face__back img {
-  width: 80px;
-}
