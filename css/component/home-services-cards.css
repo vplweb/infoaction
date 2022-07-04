@@ -1,0 +1,33 @@
+#block-views-block-services-and-fees-block-2 div[class*="js-view-dom"] {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
+}
+
+#block-views-block-services-and-fees-block-2 header {
+  display: block;
+  position: absolute;
+  margin-top: -2em;
+  right: 0;
+}
+
+#block-views-block-services-and-fees-block-2 .views-row {
+  height: 100%;
+  background-color:var(--infoaction--green);
+}
+
+#block-views-block-services-and-fees-block-2 h2 {
+  margin-bottom: 0.25em;
+}
+
+#block-views-block-services-and-fees-block-2 h4 {
+  margin-top: -1em;
+  padding: 0.25em 0.5em;
+  height: 3em;
+  text-align: center;
+  background-color: var(--infoaction--green);
+}
+
+#block-views-block-services-and-fees-block-2 h4 a {
+  color: white;
+}
