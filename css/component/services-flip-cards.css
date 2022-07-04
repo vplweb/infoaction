@@ -42,12 +42,23 @@ img {
   transition: 0.25s;
   background: rgb(0,112,112);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.card .face.face__back h3 {
+  color: white;
+  text-align: center;
+}
+
 .card:hover .face.face__back {
   height: 60px;
+}
+
+.card:hover .face.face__back h3 {
+  opacity: 0;
+  display: none;
 }
 
 .card:hover {
