@@ -12,6 +12,7 @@
   padding: 2em;
   background: var(--infoaction--light-green);
   color: var(--infoaction--green);
+  box-shadow: 0 0.25em 1em rgba(0,0,0,.5);
 }
 
 #block-views-block-testimonials-block-2 .views-row h3::before {
