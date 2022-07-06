@@ -33,8 +33,10 @@
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-    <a href="{{ content.title_value }}">
-    <div class="face face__front"><h2>{{ content.title }}</h2><p>{{ content.body }}</p></div>
-    <div class="face face__back">{{ content.field_image }}<h3>{{ content.title }}</h3></div>
+  {% block content %}
+    <a href="{{ block.url }}">
+    <div class="face face__front"><h2>{{ block.title }}</h2><p>{{ block.body }}</p></div>
+    <div class="face face__back">{{ block.field_image }}<h3>{{ block.title }}</h3></div>
     </a>
+  {% endblock %}
 </div>
