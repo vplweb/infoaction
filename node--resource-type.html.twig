@@ -76,12 +76,13 @@
 
   {{ title_prefix }}
   {% if label and not page %}
-  {% if content.field_link|render is not empty  %}
+  {% if content.field_link|render %}
+  <h2{{ title_attributes }}>{{ label }}</h2>
+  {% elseif content.field_link|render is not empty  %}
       <h2{{ title_attributes }}>
         <a href="{{ content.field_link }}" rel="bookmark">{{ label }}</a>
-      </h2>
-  {% elseif content.field_link is empty %}
-     <h2{{ title_attributes }}>{{ label }}</h2>
+  </h2>
+  {% endif %}
   {% endif %}
 
     </h2>
