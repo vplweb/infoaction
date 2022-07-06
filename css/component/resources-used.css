@@ -19,16 +19,24 @@
 
 .service-node__resources-used article h2 { 
   display: flex;
+  padding: 1em;
   align-items: center;
   grid-column: 2/3;
   grid-row: 1/2;
-  padding: 1em;
-  background-color: var(--infoaction--light-green);
   font-size: 1em;
+  background-color: var(--infoaction--light-green);
 }
 
-.service-node__resources-used article h2 span{ 
+.service-node__resources-used article h2 span {
   color: var(--infoaction--green);
+}
+
+.service-node__resources-used article h2 a span { 
+  color: var(--infoaction--dark-green);
+}
+
+.service-node__resources-used article h2 a span:hover {
+  color: var(--infoaction-green);
 }
 
 .service-node__resources-used .resource-type-node {
