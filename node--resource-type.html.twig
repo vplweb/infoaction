@@ -76,14 +76,11 @@
 
   {{ title_prefix }}
   {% if label and not page %}
-  {% if content.field_link|render is not empty %}
-      <h2{{ title_attributes }}>
-        <a href="{{ content.field_link }}">{{ label }}</a>
-      </h2>
-  {% else %}
-  <h2{{ title_attributes }}>{{ label }}</h2>
-  {% endif %}
-  {% endif %}
+  <h2{{ title_attributes }}>
+    {% if content.field_link|render is not empty %}
+      <a href="{{ content.field_link }}">{{ label }}</a>
+    {% endif %}
+  </h2>
   {{ title_suffix }}
 
   <div{{ content_attributes }} class="resource-type-node">
