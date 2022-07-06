@@ -76,7 +76,7 @@
 
   {{ title_prefix }}
   {% if label and not page %}
-    {% if node.field_digital_library_link|render is not empty  %}
+    {% if node.field_digital_library_link.0.url|render is not empty  %}
       <h2{{ title_attributes }}>
         <a href="{{ node.field_digital_library_link.0.url }}">{{ label }}</a>
       </h2>
