@@ -76,9 +76,11 @@
 
   {{ title_prefix }}
   {% if label and not page %}
+  {% if content.field_digital_library_link|render is not empty  %}
     <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      <a href="{{ field_digital_library_link }}" rel="bookmark">{{ label }}</a>
     </h2>
+  {% endif %}
   {% endif %}
   {{ title_suffix }}
 
