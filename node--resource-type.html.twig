@@ -75,11 +75,9 @@
 <article{{ attributes }}>
 
   {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ content.field_link }}">{{ content.field_link }}</a>
+    <h2>
+      {{ content.field_link }}
     </h2>
-  {% endif %}
   {{ title_suffix }}
 
   <div{{ content_attributes }} class="resource-type-node">
